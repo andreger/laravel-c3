@@ -2,7 +2,8 @@ $(function() {
     $('.x-c3').each(function() {
 
         let bindTo = '#' + $(this).attr('id'),
-            type = $(this).data('type'),
+            dataType = $(this).data('type'),
+            dataX = $(this).data('x'),
             chart = {};
 
         chart.bindto = bindTo;
@@ -10,8 +11,12 @@ $(function() {
         chart.data = {};
         chart.data.columns = $(this).data('columns');
 
-        if(type) {
-            chart.data.type = type;
+        if(dataType) {
+            chart.data.type = dataType;
+        }
+
+        if(dataX) {
+            chart.data.x = dataX;
         }
 
         c3.generate(chart);

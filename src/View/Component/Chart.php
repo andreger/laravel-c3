@@ -13,7 +13,9 @@ abstract class Chart extends Component
 
     public $dataColumns;
 
-    public function __construct(string $id = null, $dataColumns = null)
+    public $dataX;
+
+    public function __construct(string $id = null, array $dataColumns = null, string $dataX = null)
     {
         if ($id === null) {
             $this->id = 'x-c3-' . Str::random(10);
@@ -23,6 +25,7 @@ abstract class Chart extends Component
         }
 
         $this->dataColumns = $dataColumns;
+        $this->dataX = $dataX;
     }
 
     /**
@@ -30,10 +33,12 @@ abstract class Chart extends Component
      */
     public function render()
     {
-        $typeAttr = $this->type ? "data-type='{$this->type}'" : null;
+        $dataTypeAttr = $this->type ? "data-type='{$this->type}'" : null;
+        $dataXAttr = $this->dataX ? "data-x='{$this->dataX}'" : null;
 
         return view('c3::chart', [
-            'typeAttr' => $typeAttr,
+            'dataTypeAttr' => $dataTypeAttr,
+            'dataXAttr' => $dataXAttr,
         ]);
     }
 }
