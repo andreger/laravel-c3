@@ -1,0 +1,40 @@
+{
+    "name": "asgedev/laravel-c3",
+    "description": "Blade components to render C3 graphs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Gervásio",
+            "email": "andreger@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelC3\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelC3\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelC3\\LaravelC3ServiceProvider"
+            ]
+        }
+    }
+}
