@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelC3\View\Component;
+namespace Andreger\C3\View\Component;
 
 use Illuminate\Support\Str;
 use Illuminate\View\Component;

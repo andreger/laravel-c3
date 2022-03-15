@@ -1,5 +1,5 @@
 {
-    "name": "asgedev/laravel-c3",
+    "name": "andreger/laravel-c3",
     "description": "Blade components to render C3 graphs",
     "type": "library",
     "license": "MIT",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelC3\\": "src"
+            "Andreger\\C3\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LaravelC3\\Tests\\": "tests"
+            "Andreger\\C3\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelC3\\LaravelC3ServiceProvider"
+              "C3ServiceProvider"
             ]
         }
     }

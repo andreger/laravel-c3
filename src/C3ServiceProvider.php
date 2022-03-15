@@ -1,23 +1,23 @@
 <?php
 
-namespace LaravelC3;
+namespace Andreger\C3;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelC3\View\Component\Area;
-use LaravelC3\View\Component\AreaSpline;
-use LaravelC3\View\Component\AreaStep;
-use LaravelC3\View\Component\Bar;
-use LaravelC3\View\Component\Chart;
-use LaravelC3\View\Component\Donut;
-use LaravelC3\View\Component\Gauge;
-use LaravelC3\View\Component\Line;
-use LaravelC3\View\Component\Pie;
-use LaravelC3\View\Component\Scatter;
-use LaravelC3\View\Component\Spline;
-use LaravelC3\View\Component\Stanford;
-use LaravelC3\View\Component\Step;
+use Andreger\C3\View\Component\Area;
+use Andreger\C3\View\Component\AreaSpline;
+use Andreger\C3\View\Component\AreaStep;
+use Andreger\C3\View\Component\Bar;
+use Andreger\C3\View\Component\Chart;
+use Andreger\C3\View\Component\Donut;
+use Andreger\C3\View\Component\Gauge;
+use Andreger\C3\View\Component\Line;
+use Andreger\C3\View\Component\Pie;
+use Andreger\C3\View\Component\Scatter;
+use Andreger\C3\View\Component\Spline;
+use Andreger\C3\View\Component\Stanford;
+use Andreger\C3\View\Component\Step;
 
-class LaravelC3ServiceProvider extends ServiceProvider
+class C3ServiceProvider extends ServiceProvider
 {
     public function boot()
     {

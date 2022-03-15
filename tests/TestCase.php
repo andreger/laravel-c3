@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelC3\Tests;
+namespace Andreger\C3\Tests;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
-use LaravelC3\LaravelC3ServiceProvider;
+use Andreger\C3\C3ServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -18,7 +18,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            LaravelC3ServiceProvider::class,
+            C3ServiceProvider::class,
         ];
     }
 

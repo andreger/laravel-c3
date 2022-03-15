@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelC3\Tests\Unit;
+namespace Andreger\C3\Tests\Unit;
 
-use LaravelC3\Tests\TestCase;
+use Andreger\C3\Tests\TestCase;
 
 class ChartTest extends TestCase
 {
