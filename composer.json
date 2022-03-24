@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "C3ServiceProvider"
+              "Andreger\\C3\\C3ServiceProvider"
             ]
         }
     }
